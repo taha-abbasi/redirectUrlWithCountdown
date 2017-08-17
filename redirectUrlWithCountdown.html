@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Redirect</title>
+</head>
+<body>
+
+</body>
+</html>
+<div>
+	<h1 id="counterElem">5</h1>
+</div>
+
+
+
+<script type="text/javascript">
+
+	document.addEventListener('DOMContentLoaded', function() {
+
+		var counterElem = document.getElementById("counterElem");
+		var timer = setTimeout(function() {
+	            window.location='https://app.hellosign.com/s/31709762'
+
+	        }, 5200);
+
+		setInterval(change, 1000);
+
+	    function change() {
+	    	if (counterElem.innerHTML > 0) {
+
+	    		counterElem.innerHTML = counterElem.innerHTML - 1;
+	    		console.log(counterElem.innerHTML);
+
+	    	}
+	    }
+	}, false);
+
+
+</script>
